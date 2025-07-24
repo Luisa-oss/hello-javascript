@@ -44,27 +44,29 @@ console.log(books);
 
 let month = new Map ();
 month = new Map ([
-    ["Enero", 1],
-    ["Febrero", 2],
-    ["Marzo", 3],
-    ["Abril", 4],
-    ["Mayo", 5],
-    ["Junio", 6],
-    ["Julio", 7],
-    ["Agosto", 8],
-    ["Septiembre", 9],
-    ["Octubre", 10],
-    ["Noviembre", 11],
-    ["Diciembre", 12],
+    [1, "Enero"],
+    [2, "Febrero",],
+    [3, "Marzo",],
+    [4, "Abril",],
+    [5, "Mayo"],
+    [6, "Junio"],
+    [7, "Julio"],
+    [8, "Agosto"],
+    [9, "Septiembre"],
+    [10, "Octubre"],
+    [11, "Noviembre"],
+    [12, "Diciembre"],
 ]);
 
 console.log(month);
 
 // 8. Comprueba si el mes numero 5 existe en el map e imprime su valor 
 
-//if (month.has(5)){
-    //console.log(`El mes numero 5 es: ${month}`)
-//}; //NO SALIO 
+if (month.has(5)){ // dentro del parentecis del has va la clave que se quiere buscar 
+    console.log(`El mes numero 5 es: ${month.get(5)}`);
+} else {
+    console.log("No se encontro el mes nuemro 5");
+} 
 
 // 9. Añade al mapa una clave con un array como que almacene los meses de verano 
 
@@ -73,6 +75,11 @@ console.log(month);
 
 // 10. Crea un array, transformalo a un set y almacenalo en un map 
 
-//let month2 = Array.from(mySet);
-//console.log(month); //NO SALIO 
+let animals2 = ["foca", "pajaro", "perro", "gato", "delfin"]; // Se crea primero el array 
+let mySet = new Set (animals2); // Convertir el array en un set con new Set
+console.log(mySet); // Imprimir el set 
+
+
+
+
 
